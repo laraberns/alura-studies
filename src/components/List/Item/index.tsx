@@ -1,6 +1,7 @@
+import { ITasks } from '../../../types/ITasks'
 import style from '../list.module.scss'
 
-function Item({ task, time }: { task: string, time: string }) {
+function Item({ task, time, completed, id, selected }: ITasks) {
     return (
         <li className={style.item}>
             <h3>{task}</h3>
